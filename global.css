@@ -1,0 +1,30 @@
+* {
+  word-wrap: break-word;
+}
+
+a {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 800px;
+  min-width: 500px;
+  margin: 0 auto;
+  padding: 0.7em;
+}
+
+.box {
+  padding: 1.5em;
+}
+
+.beautified-border {
+  box-shadow: 3px 3px 3px;
+  -moz-box-shadow: 3px 3px 3px;
+  -o-box-shadow: 3px 3px 3px;
+  -webkit-box-shadow: 3px 3px 3px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  -webkit-border-radius: 0.5em;
+  border: solid 0.5px #EFDFDF;
+}

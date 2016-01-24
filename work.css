@@ -1,0 +1,37 @@
+body {
+  background: url(img/bg4.jpg) repeat-x center top;
+}
+
+.container {
+  max-width: 800px;
+  min-width: 500px;
+  overflow: auto;
+}
+
+.header {
+  height: 180px;
+  background: gray url(img/header2.jpg) no-repeat center bottom;
+  margin-bottom: 12px;
+}
+
+.header+.box {
+  min-height: 500px;
+}
+
+.header+.box h4 {
+  margin-bottom: 8px;
+}
+
+.header+.box a {
+  padding-left: 30px;
+}
+
+.header+.box a, .header+.box a:visited {
+  color: gray;
+  text-decoration: none;
+}
+
+.header+.box a:hover {
+  color: red;
+  text-decoration: underline;
+}

@@ -1,0 +1,59 @@
+body {
+  background: url(img/bg3.jpg) no-repeat center top;
+}
+
+.container {
+  max-width: 950px;
+  min-width: 850px;
+  overflow: auto;
+}
+
+.header {
+  height: 180px;
+  background: gray url(img/header1.jpg) no-repeat right bottom;
+  margin-bottom: 12px;
+}
+
+.header img {
+  height: 150px;
+  position: relative;
+  left: 10px;
+  top: 15px;
+  animation: windmill-rotation 30s linear 0s infinite normal;
+  -moz-animation: windmill-rotation 30s linear 0s infinite normal;
+  -o-animation: windmill-rotation 30s linear 0s infinite normal;
+  -webkit-animation: windmill-rotation 30s linear 0s infinite normal;
+}
+
+@keyframes windmill-rotation {
+  0% {transform: rotate(0deg);}
+  100% {transform:rotate(360deg);}
+}
+
+@-moz-keyframes windmill-rotation {
+  0% {transform: rotate(0deg);}
+  100% {transform:rotate(360deg);}
+}
+
+@-o-keyframes windmill-rotation {
+  0% {transform: rotate(0deg);}
+  100% {transform:rotate(360deg);}
+}
+
+@-webkit-keyframes windmill-rotation {
+  0% {transform: rotate(0deg);}
+  100% {transform:rotate(360deg);}
+}
+
+.primary {
+  float: left;
+  width: 68%;
+  min-height: 500px;    /* temp*/
+}
+
+.secondary {
+  float: right;
+  background: rgba(234, 232, 232, 0.7);
+  width: 23%;
+  min-height: 500px;    /* temp*/
+}

@@ -1,0 +1,137 @@
+body {
+  background: black url(img/bg.png) no-repeat 50% 25%;
+  overflow: hidden;
+}
+
+#ZXCroon-box {
+  color: yellow;
+  position: absolute;
+  left: 28%;
+  top: 30%;
+}
+
+#ZXCroon-box:hover img {
+  width: 610px;
+}
+
+#ZXCroon-box #glasses a {
+  display: block;
+  position: absolute;
+  right: 14.5%;
+  bottom: 17.8%;
+  width: 26.7%;
+  height: 22.7%;
+}
+
+#ZXCroon-box #glasses a:hover {
+  background: url(img/glasses.png) no-repeat left top;
+}
+
+.nav {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #494747;
+  list-style: none;
+  padding-right: 12px;
+  border-right: solid 3px;
+  font-family: Segoe Print, Broadway;
+}
+
+.nav li a, .nav li a:visited {
+  text-align: right;
+  display: block;
+  font-size: 22px;
+  padding: 0.2em;
+  transition: color 0.7s;
+  -moz-transition: color 0.7s;
+  -o-transition: color 0.7s;
+  -webkit-transition: color 0.7s;
+  text-decoration: inherit;
+  color: inherit;
+}
+
+.nav li a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+#disc {
+  position: absolute;
+  top: -175px;
+  right: -175px;
+  animation: disc-rotation 10s linear 0s infinite normal;
+  -moz-animation: disc-rotation 10s linear 0s infinite normal;
+  -o-animation: disc-rotation 10s linear 0s infinite normal;
+  -webkit-animation: disc-rotation 10s linear 0s infinite normal;
+}
+
+@keyframes disc-rotation {
+  0% {transform: rotate(0deg);}
+  100% {transform:rotate(360deg);}
+}
+
+@-moz-keyframes disc-rotation {
+  0% {transform: rotate(0deg);}
+  100% {transform:rotate(360deg);}
+}
+
+@-o-keyframes disc-rotation {
+  0% {transform: rotate(0deg);}
+  100% {transform:rotate(360deg);}
+}
+
+@-webkit-keyframes disc-rotation {
+  0% {transform: rotate(0deg);}
+  100% {transform:rotate(360deg);}
+}
+
+#car {
+  position: absolute;
+  left: 600px;
+  top: 150px;
+}
+
+#car div {
+  width: 51px;
+  height: 51px;
+  background: url(img/car-button.png) no-repeat left top;
+}
+
+#car div:active {
+  background: url(img/car-button-active.png) no-repeat left top;
+}
+
+#car img {
+  position: absolute;
+  top: 200%;
+  visibility: hidden;
+}
+
+#car:active img {
+  visibility: visible;
+  animation: car-rush 3.2s;
+  -moz-animation: car-rush 3.2s;
+  -o-animation: car-rush 3.2s;
+  -webkit-animation: car-rush 3.2s;
+}
+
+@keyframes car-rush {
+  0% {right: -1000px;}
+  100% {right: 2500px;}
+}
+
+@-moz-keyframes car-rush {
+  0% {right: -1000px;}
+  100% {right: 2500px;}
+}
+
+@-o-keyframes car-rush {
+  0% {right: -1000px;}
+  100% {right: 2500px;}
+}
+
+@-webkit-keyframes car-rush {
+  0% {right: -1000px;}
+  100% {right: 2500px;}
+}
